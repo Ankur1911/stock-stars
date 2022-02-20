@@ -130,7 +130,7 @@ Fixed Navigation
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <img src="images/logo.png" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -139,22 +139,22 @@ Fixed Navigation
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pricing.html">Buy/Sell</a>
+                                <a class="nav-link" href="pricing.php">Buy/Sell</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="faq.html">F.A.Q</a>
+                                <a class="nav-link" href="faq.php">F.A.Q</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="contact.php">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="login.html">Sign In</a>
+                                <a class="nav-link" href="login.php">Sign In</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="signup.html">Sign Up</a>
+                                <a class="nav-link" href="signup.php">Sign Up</a>
                             </li>
 
                             <li class="nav-item dropdown">
@@ -162,9 +162,9 @@ Fixed Navigation
                                     Pages
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="team.html">Team Page</a>
-                                    <a class="dropdown-item" href="404.html">404 Page</a>
-                                    <a class="dropdown-item" href="blog.html">Blog Page</a>
+                                    <a class="dropdown-item" href="team.php">Team Page</a>
+                                    <a class="dropdown-item" href="404.php">404 Page</a>
+                                    <a class="dropdown-item" href="blog.php">Blog Page</a>
                                 </div>
                             </li>
                         </ul>
@@ -183,7 +183,7 @@ Fixed Navigation
 				<h2>Our Team</h2>
 				<nav aria-label="breadcrumb mx-auto" role="navigation">
 				  <ol class="breadcrumb">
-				    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
 				    <li class="breadcrumb-item active" aria-current="page">Our Team</li>
 				  </ol>
 				</nav>
