@@ -9,11 +9,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Bingo One page parallax responsive HTML Template ">
   
-  <meta name="author" content="Themefisher.com">
+  <meta name="author" content="stock stars.com">
 
 
   
-  <title>Bit-Bank</title>
+  <title>Stock Stars</title>
 
 <!-- Mobile Specific Meta
   ================================================== -->
@@ -134,7 +134,7 @@ Fixed Navigation
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="index.php">
-                        <img src="images/logo.png" alt="logo">
+                        <img src="images/LOGO.png" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="tf-ion-android-menu"></span>
@@ -243,7 +243,7 @@ Welcome Slider
 <!--
 Start About Section
 ==================================== -->
-<section class="about-2 section bg-gray" id="about">
+<!-- <section class="about-2 section bg-gray" id="about">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-6 align-self-center mb-4 mb-md-0">
@@ -261,7 +261,7 @@ Start About Section
 			</div> 		
 		</div>
 	</div>
-</section>
+</section> -->
 
 <section class="services section-xs"  id="services">
 	<div class="container">
@@ -348,10 +348,10 @@ Start About Section
     <div class="row">
       <div class="col">
         <div class="title text-center">
-          <h4>Bitcoin flow</h4>
+          <h4>Stock Stars flow</h4>
           <h2>How It Works</h2>
           <span class="border"></span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!</p>
+          <p>You have to sign up with your e-mail,Buy subscription of our experts and<br> make money.</p>
         </div>
       </div>
     </div>
@@ -360,21 +360,21 @@ Start About Section
         <div class="service-item text-center">
             <span class="count">1.</span>
             <h4>Sign Up</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.</p>
+            <p>Sign up by your email with stock stars.</p>
         </div>
       </div>
       <div class="col-md-4 p-0">
         <div class="service-item text-center">
           <span class="count">2.</span>
-          <h4>Connect</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.</p>
+          <h4>Learn Free</h4>
+          <p>Learn basics of stock market free with video tutorials and reading materials.</p>
         </div>
       </div>
       <div class="col-md-4 p-0">
         <div class="service-item text-center">
           <span class="count">3.</span>
-          <h4>Buy Digital Currency</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.</p>
+          <h4>Contact our Experts</h4>
+          <p>Buy subscription of our experts and make money through their tips.</p>
         </div>
       </div>
     </div>    <!-- End row -->
@@ -388,8 +388,8 @@ Start Call To Action
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h2>Open account for free and start trading Bitcoins now!</h2>
-				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit.</p>
+				<h2>Open free demat account for free and start trading now!</h2>
+				<p>Open free demat account with Stock stars, <br>Enjoy intraday,equity,F&O and IPO.</p>
 				<a href="" class="btn btn-main">Get Started</a>
 			</div>
 		</div> 		<!-- End row -->
@@ -398,7 +398,7 @@ Start Call To Action
 
 <!-- Start Pricing section
 		=========================================== -->
-<section class="pricing-table section" id="pricing">
+<!-- <section class="pricing-table section" id="pricing">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -557,8 +557,8 @@ Start Call To Action
                 </div>
             </div>
         </form>
-    </div> <!-- End container -->
-</section> <!-- End section -->
+    </div> 
+</section>  -->
 
 <!-- Start Testimonial
 =========================================== -->
@@ -683,7 +683,7 @@ Start Call To Action
 <!--
 Start Blog Section
 =========================================== -->
-<section class="blog section" id="blog">
+<!-- <section class="blog section" id="blog">
 	<div class="container">
 		<div class="row">
 			<div class="col">
@@ -696,7 +696,7 @@ Start Blog Section
 			</div>
 		</div>
 		<div class="row">
-			<!-- single blog post -->
+	
 			<article class="col-12 col-md-6" >
 				<div class="post-item">
 					<div class="post-thumb">
@@ -714,9 +714,7 @@ Start Blog Section
 				    <a class="btn btn-main" href="#">Read more</a>
 				</div>
 			</article>
-			<!-- /single blog post -->
 			
-			<!-- single blog post -->
 				<article class="col-12 col-md-6" >
 					<div class="post-item">
 						<div class="post-thumb">
@@ -741,17 +739,14 @@ Start Blog Section
 					    <a class="btn btn-main" href="#">Read more</a>
 					</div>
 				</article>
-			<!-- end single blog post -->
 			
-		</div> <!-- end row -->
-	</div> <!-- end container -->
-</section> <!-- end section -->
-				
+		</div> 
+	</div> 
+</section> -->
 
-<!--
-Start Call To Action
-==================================== -->
-<section class="call-to-action section-sm">
+
+
+<!-- <section class="call-to-action section-sm">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -759,9 +754,9 @@ Start Call To Action
 				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit.</p>
 				<a href="" class="btn btn-main">Get Started</a>
 			</div>
-		</div> 		<!-- End row -->
-	</div>   	<!-- End container -->
-</section>   <!-- End section -->
+		</div> 		
+	</div>   	
+</section>    -->
 
 <footer id="footer" class="bg-one">
   <div class="top-footer">
