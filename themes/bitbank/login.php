@@ -1,3 +1,38 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    include '_dbconn.php';
+
+   
+    $Email = $_POST["email"];
+    
+   
+    $password = $_POST["pass"];
+
+  
+
+		$sql = "select `Email`,`Password` from `login` where `Email`='$Email'";
+   		$result = mysqli_query($conn, $sql);
+		$rec = mysqli_fetch_assoc($result);
+		if($password==$rec["Password"]){
+			echo "success";
+
+		}else{
+			echo "enter valid password";
+		}
+   
+        
+       
+    
+   
+
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -65,65 +100,8 @@
 <!--
 Fixed Navigation
 ==================================== -->
-<section class="top-header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="currency-status">
-                    <li>
-                        <a href="#">
-                            <i class="tf-ion-arrow-down-b down-status"></i>
-                            <span>BTC/USD</span>
-                            <span>15046.07</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>ETH/USD</span>
-                            <span >843.0005</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>BCH/USD</span>
-                            <span>2648.1377</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>BTG/USD</span>
-                            <span>278.0000</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup down-status"></i>
-                            <span>DASH/USD</span>
-                            <span>1131.8100</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup down-status"></i>
-                            <span>XRP/USD</span>
-                            <span>2.1956</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>ZEC/USD</span>
-                            <span>2.1956</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+
+<?php include 'api.php' ?>
 <section class="header  navigation">
     <div class="container">
         <div class="row">
@@ -181,12 +159,12 @@ Fixed Navigation
                 <div class="block">
                     <h2 class="text-center">Sign In to BitBank</h2>
                     
-                    <form class="text-left clearfix mt-50" action="index.php" >
+                    <form class="text-left clearfix mt-50" method="POST" action="login.php" >
                         <div class="form-group">
-                            <input type="email" class="form-control"  placeholder="Email">
+                            <input type="email" class="form-control" name="email" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input type="password" class="form-control" name="pass" placeholder="Password">
                         </div>
                         <button type="submit" class="btn btn-main" >Sign In</button>
                         

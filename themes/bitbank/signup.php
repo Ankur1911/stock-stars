@@ -1,3 +1,80 @@
+
+
+<?php
+
+
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    include '_dbconn.php';
+
+    $name = $_POST["Fname"];
+    $Email = $_POST["Email"];
+    $number = $_POST["number"];
+    $type = $_POST["type"];
+    $password = $_POST["pass"];
+    
+    echo $type;
+    if(isset($_POST["Fname"])&&isset($_POST["Email"])&&isset($_POST["number"])&&isset($_POST["pass"])){
+     
+      if($type=="Beginner"){
+
+        $sql = "select * from `login` where Email='$Email'";
+        $result1 = mysqli_query($conn, $sql); 
+        $num = mysqli_num_rows($result1);
+        if($num==0){
+         
+        $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`) VALUES ('$name', '$Email', '$number', '$password','0')";
+        $result = mysqli_query($conn, $sql);
+        
+        }else{
+          echo "Email is already register";
+        }
+
+
+       
+      }
+      if($type=="Expert"){
+
+        $sql = "select * from `login` where Email='$Email'";
+        $result1 = mysqli_query($conn, $sql); 
+        $num = mysqli_num_rows($result1);
+        if($num==0){
+
+          $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`) VALUES ('$name', '$Email', '$number', '$password','1')";
+          $result = mysqli_query($conn, $sql);
+
+
+        }else{
+          echo "Email is already register";
+        }
+
+       
+      }
+      
+
+
+        
+    }else{
+      echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+      PLEASE FILL ALL THE INFORMATION...!!
+     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+     </div>';
+
+    }
+
+       
+
+}
+
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -65,65 +142,7 @@
 <!--
 Fixed Navigation
 ==================================== -->
-<section class="top-header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="currency-status">
-                    <li>
-                        <a href="#">
-                            <i class="tf-ion-arrow-down-b down-status"></i>
-                            <span>BTC/USD</span>
-                            <span>15046.07</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>ETH/USD</span>
-                            <span >843.0005</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>BCH/USD</span>
-                            <span>2648.1377</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>BTG/USD</span>
-                            <span>278.0000</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup down-status"></i>
-                            <span>DASH/USD</span>
-                            <span>1131.8100</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup down-status"></i>
-                            <span>XRP/USD</span>
-                            <span>2.1956</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>ZEC/USD</span>
-                            <span>2.1956</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include 'api.php' ?>
 <section class="header  navigation">
     <div class="container">
         <div class="row">
@@ -181,22 +200,24 @@ Fixed Navigation
       <div class="col-md-6 mx-auto">
         <div class="block text-center">
           <h2 class="text-center">Create Your Account</h2>
-          <form class="text-left clearfix mt-30" action="index.php">
+          <form class="text-left clearfix mt-30" method="POST" action="signup.php">
             <div class="form-group">
-              <input type="text" class="form-control"  placeholder="First Name">
+              <input type="text" class="form-control"  name="Fname"placeholder="Full Name">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control"  placeholder="Last Name">
+              <input type="email" class="form-control"  name="Email"placeholder="Email">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control"  placeholder="Username">
+              <input type="number" class="form-control"  name="number"placeholder="phone number">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control"  placeholder="Email">
+              <input type="password" class="form-control" name="pass" placeholder="Password">
             </div>
             <div class="form-group">
-              <input type="password" class="form-control"  placeholder="Password">
-            </div>
+						<input type="radio" class="radio" name="type" value="Beginner">Beginner
+						<input type="radio" class="radio" name="type" value="Expert">Expert
+					
+					 </div>
             <button type="submit" class="btn btn-main text-center">Sign In</button>
           </form>
           <p class="mt-20">Already hava an account ?<a href="login.php"> Login</a></p>
