@@ -188,16 +188,16 @@ Welcome Slider
 		<div class="row">
 			<div class="col-lg-6 align-self-center mb-4 mb-lg-0">
 				<div class="video-player">
-					<img class="img-fluid rounded" src="images/slider/slider-bg-2.jpg" alt="">
-					<a class="play-icon">
-						<i class="tf-ion-ios-play" data-video="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1"></i>
-					</a>
+					<img class="img-fluid rounded" src="images/slider/buffet.jpg" alt="">
+					<a class="">
+						<i class="tf-ion-ios-play" data-video=""></i>
+					</a>    
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="block">
-					<h2>Bitcoin is a remarkable cryptographic achievement</h2>
-					<p>The ability to create something which is not duplicable in the digital world has enormous value…Lot’s of people will build businesses on top of that.</p>
+					<h2 style="font-size:35px">If You don't find a way to make money while you sleep,<br> you will work until die.</h2>
+					<p>The stock market is filled with individuals who know the price of everything, but the value of nothing</p>
 					<ul class="list-inline">
 						<li class="list-inline-item">
 							<a data-scroll href="#services" class="btn btn-main">Explore Us</a>		
