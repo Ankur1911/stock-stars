@@ -390,7 +390,7 @@ Start Call To Action
 			<div class="col-md-12 text-center">
 				<h2>Open free demat account for free and start trading now!</h2>
 				<p>Open free demat account with Stock stars, <br>Enjoy intraday,equity,F&O and IPO.</p>
-				<a href="" class="btn btn-main">Get Started</a>
+				<a href="demat.php" class="btn btn-main">Get Started</a>
 			</div>
 		</div> 		<!-- End row -->
 	</div>   	<!-- End container -->
