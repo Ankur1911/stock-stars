@@ -37,7 +37,12 @@
   
 
 </head>
-
+<style>
+    .hero-area{
+ background-image: url('images/slider/bg.jpg');
+    }
+    
+ </style>
 <body id="body">
 
  <!--
