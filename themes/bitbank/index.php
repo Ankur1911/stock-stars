@@ -824,10 +824,14 @@ Start Blog Section
       </div>
     </div> <!-- end container -->
   </div>
-  <div class="footer-bottom">
-    <h5>Copyright 2017. All rights reserved.</h5>
-    <h6>Design and Developed by <a href="">Themefisher</a></h6>
-  </div>
+  <?php 
+  $year=date("Y");
+  
+  echo '<div class="footer-bottom">      
+     <h5>Copyright '.$year.'. All rights reserved.</h5> 
+    
+  </div>'; 
+  ?>
 </footer> <!-- end footer -->
 
 

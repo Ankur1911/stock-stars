@@ -128,7 +128,6 @@ Fixed Navigation
 						<h4>Drop us a note</h4>
 						<h2>Contact Us.</h2>
 						<span class="border"></span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!</p>
 					</div>
 				</div>
 			</div>
