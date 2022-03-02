@@ -82,6 +82,7 @@ Fixed Navigation
 					</div>
 				</div>
 			</div>
+     <form action="https://formsubmit.co/vivek.kakadiya0@email.com" method="post">
 			<div class="row">
 				<!-- Contact Form -->
 				<div class="contact-form col-12 col-md-6  mx-auto" >
@@ -119,7 +120,7 @@ Fixed Navigation
 				</div>
 				<!-- ./End Contact Form -->
 			</div> <!-- end row -->
-			
+     </form>
 		</div> <!-- end container -->
 	</section> <!-- end section -->
 
