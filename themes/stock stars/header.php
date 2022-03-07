@@ -36,7 +36,7 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="team.php">Team Page</a>
-                                    <a class="dropdown-item" href="404.php">404 Page</a>
+                                    <!-- <a class="dropdown-item" href="404.php">404 Page</a> -->
                                     <a class="dropdown-item" href="blog.php">Blog Page</a>
                                 </div>
                             </li>

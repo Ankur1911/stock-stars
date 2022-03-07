@@ -74,20 +74,20 @@ Fixed Navigation
 		<div class="row">
 			<div class="col-md-4">
 				<h2>Frequently Asked Questions</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, repudiandae.</p>
-				<p>admin@mail.com</p>
+				<p>Frequantly Asked Questions by users regarding stock-stars and stock market. </p>
+				<p>stockstars01@gmail.com</p>
 			</div>
 			<div class="col-md-8">
-				<h4>Order Status</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iusto, alias, tempora fuga quam eveniet neque excepturi aliquid. Eligendi, mollitia.</p>
-				<h4>Shipping & Delivery</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus, incidunt similique nobis sint quisquam nam ab error consequuntur sit ullam ex eum exercitationem, excepturi explicabo beatae eos aspernatur odit ad perspiciatis, neque saepe magni enim. Maiores quia, quae sequi.</p>
-				<h4>Payments</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus repellat id, laboriosam ipsa repudiandae quisquam, suscipit officiis, praesentium itaque facilis distinctio dolorum. Velit reiciendis libero laudantium corporis, delectus impedit sunt.</p>
-				<h4>Returns & Exchanges</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eaque nam, ab voluptas et debitis sint hic vel ratione dignissimos.</p>
-				<h4>Privacy Policy</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis quod saepe, inventore ipsum sint cum iste quae ratione nobis laborum minima autem totam similique, quia neque deleniti! Provident, suscipit.</p>
+				<h4>How to find good companies as there are many publicly listed companies in the Indian stock market?</h4>
+				<p>An easier way is to use a stock screener. A stock screener is a tool to choose a few companies from a pool of all the listed companies on a stock exchange using filters. The individuals can apply some filters like valuations, the market cap of the company etc. The filters should be specific to the industry that the individual is analysing and get a list of stocks based on the criteria applied.</p>
+				<h4> Should I invest in the upcoming IPOs?</h4>
+				<p>IPOs are the products of the bull market. The companies generally get public when everything is good in the market like people are optimistic, the economy is doing well to earn listing profits. The real test of a company is during the bear market i.e how they survive in the falling market.</p>
+				<h4>Should I invest in stocks when the market is at high?</h4>
+				<p>If the market is high, then start making the watchlist of stocks. Keep an eye on the stocks with good fundamentals. If the investor finds some good stocks and is ready to invest, then avoid lump sum investment. Average out the stocks, this will reduce the chances of buying stocks at a high price.</p>
+				<h4>What kind of stocks should be avoided for investment?</h4>
+				<p>The individual should avoid investing in stocks having low liquidity. The low liquidity makes it hard to trade in these stocks. Additionally, finding the data for analysing these companies might be hard as information on public platforms is generally not easily available. Thus, lack of research may result in loss-making investments. Additionally, one should also avoid investing in penny stocks.</p>
+				<h4> How can I track my stock portfolio?</h4>
+				<p>To be a successful investor it is important to do portfolio analysis at regular intervals. But how exactly to track your stock portfolio? Is it only checking the stock price movement? Or is there much more to check?</p>
 			</div>
 		</div>
 	</div>
