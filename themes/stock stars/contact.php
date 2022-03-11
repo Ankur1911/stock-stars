@@ -66,8 +66,8 @@
 <!--
 Fixed Navigation
 ==================================== -->
-<?php include 'api.php' ?>
-<?php include 'header.php' ?>
+<?php include 'particle/api.php' ?>
+<?php include 'particle/header.php' ?>
 
 <!-- Srart Contact Us
 		=========================================== -->		
@@ -124,7 +124,7 @@ Fixed Navigation
 		</div> <!-- end container -->
 	</section> <!-- end section -->
 
-  <?php include 'footer.php' ?><!-- end footer -->
+  <?php include 'particle/footer.php' ?><!-- end footer -->
 
 
     <!-- end Footer Area

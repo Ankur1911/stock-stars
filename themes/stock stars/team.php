@@ -66,8 +66,8 @@
 <!--
 Fixed Navigation
 ==================================== -->
-<?php include 'api.php' ?>
-<?php include 'header.php' ?>
+<?php include 'particle/api.php' ?>
+<?php include 'particle/header.php' ?>
 
 <section class="single-page-header">
 	<div class="container">
@@ -377,7 +377,7 @@ Fixed Navigation
 		</div>       <!-- End container -->
 	</section>    <!-- End Section -->
 
-  <?php include 'footer.php' ?> <!-- end footer -->
+  <?php include 'particle/footer.php' ?> <!-- end footer -->
 
 
     <!-- end Footer Area
