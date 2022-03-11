@@ -1,7 +1,7 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    include '_dbconn.php';
+    include 'particle/_dbconn.php';
 
    
     $Email = $_POST["email"];
@@ -11,11 +11,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   
 
-		$sql = "select `Email`,`Password` from `login` where `Email`='$Email'";
+		$sql = "select `Email`,`Password`,'status' from `login` where `Email`='$Email'";
    		$result = mysqli_query($conn, $sql);
 		$rec = mysqli_fetch_assoc($result);
 		if($password==$rec["Password"]){
-			echo "success";
+			if($rec["status"]){
+        echo "asa";
+        header('location:ExForm.html');
+      }else{
+        echo "Enjoy..!!!";
+      }
 
 		}else{
 			echo "enter valid password";
