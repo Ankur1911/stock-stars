@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		if($password==$rec["Password"]){
 			if($rec["status"]){
         echo "asa";
-        header('location:ExForm.html');
+        header('location:ExForm.php');
       }else{
         echo "Enjoy..!!!";
       }
