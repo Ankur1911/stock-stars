@@ -1,6 +1,7 @@
 <?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
     include 'particle/_dbconn.php';
 
    
@@ -11,23 +12,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   
 
-		$sql = "select `Email`,`Password`,'status' from `login` where `Email`='$Email'";
+		$sql = "select * from `login` where `Email`='$Email'";
    		$result = mysqli_query($conn, $sql);
 		$rec = mysqli_fetch_assoc($result);
-		if($password==$rec["Password"]){
+		if($password==$rec["Password"])
+    {
 			
-        if(!$rec["about"]){
+        if($rec["about"]==0){
           
           header('location:beginner/beginner.php');
         }
-        if(!$rec["status"]){
-          
+        else if(!$rec["status"])
+        {
           header('location:ExForm.php');
-        
+        }
+        else 
+        {echo "hii"; }
        
-    }
-     
-		}else{
+    } 
+		else{
 			echo "enter valid password";
 		}
    
