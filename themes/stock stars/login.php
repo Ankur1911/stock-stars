@@ -18,13 +18,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 		if($password==$rec["Password"])
     {
 			
-<<<<<<< HEAD
-  
-
-
-
-		}else{
-=======
         if($rec["about"]==0){
           
           header('location:beginner/beginner.php');
@@ -38,7 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
        
     } 
 		else{
->>>>>>> 48ed8311cb6ba4e5c9c048bcd1084710df38e35b
 			echo "enter valid password";
 		}
    
