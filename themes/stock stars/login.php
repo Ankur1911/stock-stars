@@ -11,22 +11,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   
 
-		$sql = "select `Email`,`Password`,'status' from `login` where `Email`='$Email'";
+		$sql = "select * from `login` where `Email`='$Email'";
    		$result = mysqli_query($conn, $sql);
 		$rec = mysqli_fetch_assoc($result);
 		if($password==$rec["Password"]){
 			
-        if(!$rec["about"]){
-          
-          header('location:beginner/beginner.php');
-        }
-        if(!$rec["status"]){
-          
-          header('location:ExForm.php');
-        
-       
-    }
-     
+  
+
+
+
 		}else{
 			echo "enter valid password";
 		}
