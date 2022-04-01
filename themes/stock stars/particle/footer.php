@@ -27,8 +27,8 @@
           <h3>Quick Links</h3>
           <ul>
             <!-- <li><a href="#">Partners</a></li> -->
-            <li><a href="team.php">About</a></li>
-            <li><a href="faq.php">FAQ’s</a></li>
+            <li><a href="./team.php">About</a></li>
+            <li><a href="./faq.php">FAQ’s</a></li>
             <!-- <li><a href="#">Badges</a></li> -->
           </ul>
         </div>
