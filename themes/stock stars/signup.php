@@ -29,11 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         }else{
           echo "Email is already register";
-        }
-
-
-       
+        } 
       }
+
       if($type=="Expert"){
 
         $sql = "select * from `login` where Email='$Email'";
@@ -159,7 +157,7 @@ Fixed Navigation
               <input type="email" class="form-control"  name="Email"placeholder="Email">
             </div>
             <div class="form-group">
-              <input type="number" class="form-control"  name="number"placeholder="phone number">
+              <input type="text" class="form-control"  name="number"placeholder="phone number">
             </div>
             <div class="form-group">
               <input type="password" class="form-control" name="pass" placeholder="Password">

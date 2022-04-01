@@ -22,12 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $sql = "INSERT INTO `expert` (`FName`, `LName`, `MobileNumber`, `EmailID`, `Education`, `City`, `Country`, `State`, `Experience`, `Expertise`, `Charge1`, `Charge3`, `Charge6`, `Charge12`, `AddTime`) VALUES ('$Fname', '$Lname', '$number', '$Email', '$Education', '$city', '$Country', '$State', '$Experience', '$Expertise', '$Charge1', '$Charge3', '$Charge6', '$Charge12', current_timestamp());";
     $result = mysqli_query($conn, $sql);
-
-    
-
-  
-
-	
 	
 }
 

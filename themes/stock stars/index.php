@@ -106,26 +106,26 @@ Welcome Slider
         <div class="row">
             <div class="col-md-3 col-3">
                 <div class="counters-item">
-                    <span>$50B+</span>
-                    <p>Bitcoin Served</p>
+                    <span>5K+</span>
+                    <p>Beginners joined</p>
                 </div>
             </div>
             <div class="col-md-3 col-3">
                 <div class="counters-item">
-                    <span>10M+</span>
-                    <p>Server Build</p>
+                    <span>1K+</span>
+                    <p>Experts</p>
                 </div>
             </div>
             <div class="col-md-3 col-3">
                 <div class="counters-item">
-                    <span>68</span>
-                    <p>Countries Supported</p>
+                    <span>75%+</span>
+                    <p>Sucess rate</p>
                 </div>
             </div>
             <div class="col-md-3 col-3">
                 <div class="counters-item kill-border">
-                    <span>10B</span>
-                    <p>Active Treades</p>
+                    <span>90%+</span>
+                    <p>Satisfied Beginners</p>
                 </div>
             </div>
         </div>
@@ -165,7 +165,7 @@ Start About Section
 						<img src="images/icons/bitcoin-safety-shield.png" alt="">
 					</div>
 					<h3>Easy & Secure</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+					<p>Stock-Stars is easy and secure for beginners and also has customers friendly interface.</p>
 				</div>
 			</div>
 			<!-- End Single Service Item -->
@@ -192,39 +192,7 @@ Start About Section
 					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
 				</div>
 			</div>
-            <!-- Single Service Item -->
-            <div class="col-md-4 col-sm-6 col-xs-12" >
-                <div class="service-block color-bg text-center">
-                    <div class="service-icon text-center">
-                        <img src="images/icons/bitcoin-safety-shield.png" alt="">
-                    </div>
-                    <h3>Easy & Secure</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-                </div>
-            </div>
-            <!-- End Single Service Item -->
-            <!-- Single Service Item -->
-            <div class="col-md-4 col-sm-6 col-xs-12" >
-                <div class="service-block color-bg text-center">
-                    <div class="service-icon text-center">
-                        <img src="images/icons/bitcoin-safety-shield.png" alt="">
-                    </div>
-                    <h3>Easy & Secure</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-                </div>
-            </div>
-            <!-- End Single Service Item -->
-            <!-- Single Service Item -->
-            <div class="col-md-4 col-sm-6 col-xs-12" >
-                <div class="service-block color-bg text-center">
-                    <div class="service-icon text-center">
-                        <img src="images/icons/bitcoin-safety-shield.png" alt="">
-                    </div>
-                    <h3>Easy & Secure</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-                </div>
-            </div>
-            <!-- End Single Service Item -->
+           
 		</div> 		<!-- End row -->
 	</div>   	<!-- End container -->
 </section>   <!-- End section -->
