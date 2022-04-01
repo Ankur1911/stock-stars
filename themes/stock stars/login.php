@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
    
     $password = $_POST["pass"];
 
-  
+    session_start();
 
 		$sql = "select * from `login` where `Email`='$Email'";
    		$result = mysqli_query($conn, $sql);
@@ -24,6 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         }
         else if(!$rec["status"])
         {
+          
+          $_SESSION["EName"]=$rec["Name"];
+          $_SESSION["EEmail"]=$rec["Email"];
           header('location:ExForm.php');
         }
         else 
