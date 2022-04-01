@@ -5,10 +5,10 @@
         <div class="col-sm-3 col-md-3 col-lg-3">
           <h3>INFORMATION</h3>
           <ul>
-            <li><a href="#">Payment Option</a></li>
-            <li><a href="#">Free Schedule</a></li>
-            <li><a href="#">Getting Started</a></li>
-            <li><a href="#">Bitcoin Calculator</a></li>
+            <li><a href="#">Free tutorials</a></li>
+            <li><a href="#">Live stock prices</a></li>
+            <li><a href="#">Advice from our experts</a></li>
+            <!-- <li><a href="#">Bitcoin Calculator</a></li> -->
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
@@ -26,10 +26,10 @@
         <div class="col-sm-3 col-md-3 col-lg-3">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">FAQ’s</a></li>
-            <li><a href="#">Badges</a></li>
+            <!-- <li><a href="#">Partners</a></li> -->
+            <li><a href="team.php">About</a></li>
+            <li><a href="faq.php">FAQ’s</a></li>
+            <!-- <li><a href="#">Badges</a></li> -->
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
