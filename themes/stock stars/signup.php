@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $num = mysqli_num_rows($result1);
         if($num==0){
          
-        $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`,`status`) VALUES ('$name', '$Email', '$number', '$password','0','0')";
+        $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`,`status`) VALUES ('$name', '$Email', '$number', '$password','0','1')";
         $result = mysqli_query($conn, $sql);
         
         }else{
