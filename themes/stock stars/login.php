@@ -15,13 +15,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    		$result = mysqli_query($conn, $sql);
 		$rec = mysqli_fetch_assoc($result);
 		if($password==$rec["Password"]){
-			if($rec["status"]){
-        echo "asa";
-        header('location:ExForm.php');
-      }else{
-        echo "Enjoy..!!!";
-      }
-
+			
+        if(!$rec["about"]){
+          
+          header('location:beginner/beginner.php');
+        }
+        if(!$rec["status"]){
+          
+          header('location:ExForm.php');
+        
+       
+    }
+     
 		}else{
 			echo "enter valid password";
 		}
