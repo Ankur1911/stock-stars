@@ -1,6 +1,12 @@
 <!-- database -->
 <!-- CREATE TABLE `sgp`.`expert` ( `FName` VARCHAR(20) NOT NULL , `LName` VARCHAR(20) NOT NULL , `MobileNumber` INT(10) NOT NULL , `EmailID` VARCHAR(30) NOT NULL , `Education` VARCHAR(20) NOT NULL , `City` VARCHAR(20) NOT NULL , `Country` VARCHAR(15) NOT NULL , `State` VARCHAR(20) NOT NULL , `Experience` VARCHAR(20) NOT NULL , `Expertise` TEXT NOT NULL , `Charge1` TEXT NOT NULL , `Charge3` INT(5) NOT NULL , `Charge6` INT(5) NOT NULL , `Charge12` INT(5) NOT NULL , `AddTime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`EmailID`)) ENGINE = InnoDB; -->
 <?php
+
+
+
+session_start();
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include 'particle/_dbconn.php';
 
@@ -90,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container rounded bg-white mt-5 mb-5">
         <div class="row">
             <div class="col-md-3 border-right">
-                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Edogaru</span><span class="text-black-50">edogaru@mail.com.my</span><span> </span></div>
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold"><?php echo $_SESSION["Name"] ?></span><span class="text-black-50"><?php echo $_SESSION["EEmail"] ?></span><span> </span></div>
             </div>
             <div class="col-md-5 border-right">
                 <div class="p-3 py-5">
