@@ -1,7 +1,7 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    include '_dbconn.php';
+    include 'particle/_dbconn.php';
 
    
     $Email = $_POST["email"];
@@ -11,11 +11,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   
 
-		$sql = "select `Email`,`Password` from `login` where `Email`='$Email'";
+		$sql = "select `Email`,`Password`,'status' from `login` where `Email`='$Email'";
    		$result = mysqli_query($conn, $sql);
 		$rec = mysqli_fetch_assoc($result);
 		if($password==$rec["Password"]){
-			echo "success";
+			if($rec["status"]){
+        echo "asa";
+        header('location:ExForm.php');
+      }else{
+        echo "Enjoy..!!!";
+      }
 
 		}else{
 			echo "enter valid password";
@@ -97,8 +102,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 Fixed Navigation
 ==================================== -->
 
-<?php include 'api.php' ?>
-<?php include 'header.php' ?>
+<?php include 'particle/api.php' ?>
+<?php include 'particle/header.php' ?>
 <section class="signin-page account">
     <div class="container">
         <div class="row">
@@ -123,7 +128,7 @@ Fixed Navigation
         </div>
     </div>
 </section>
-<?php include 'footer.php' ?> <!-- end footer -->
+<?php include 'particle/footer.php' ?> <!-- end footer -->
 
 
     <!-- end Footer Area

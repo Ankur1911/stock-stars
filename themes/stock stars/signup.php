@@ -6,7 +6,7 @@
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    include '_dbconn.php';
+    include 'particle/_dbconn.php';
 
     $name = $_POST["Fname"];
     $Email = $_POST["Email"];
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $num = mysqli_num_rows($result1);
         if($num==0){
          
-        $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`) VALUES ('$name', '$Email', '$number', '$password','0')";
+        $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`,`status`) VALUES ('$name', '$Email', '$number', '$password','0','0')";
         $result = mysqli_query($conn, $sql);
         
         }else{
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $num = mysqli_num_rows($result1);
         if($num==0){
 
-          $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`) VALUES ('$name', '$Email', '$number', '$password','1')";
+          $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`,`status`) VALUES ('$name', '$Email', '$number', '$password','1','0')";
           $result = mysqli_query($conn, $sql);
 
 
@@ -142,8 +142,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!--
 Fixed Navigation
 ==================================== -->
-<?php include 'api.php' ?>
-<?php include 'header.php' ?>
+<?php include 'particle/api.php' ?>
+<?php include 'particle/header.php' ?>
 
 <section class="signin-page account">
   <div class="container">
@@ -178,7 +178,7 @@ Fixed Navigation
     </div>
   </div>
 </section>
-<?php include 'footer.php' ?> <!-- end footer -->
+<?php include 'particle/footer.php' ?> <!-- end footer -->
 
 
     <!-- end Footer Area

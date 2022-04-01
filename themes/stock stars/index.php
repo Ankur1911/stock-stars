@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> 
 <html lang="zxx"> <!--<![endif]-->
-<?php include 'api.php' ?>
+<?php include 'particle/api.php' ?>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Bingo One page parallax responsive HTML Template ">
@@ -69,7 +69,7 @@
   ==================================== -->
 
 
-<?php include 'header.php' ?>
+<?php include 'particle/header.php' ?>
 
  <!--
 Welcome Slider
@@ -650,7 +650,7 @@ Start Blog Section
 	</div>   	
 </section>    -->
 
-<?php include 'footer.php' ?> <!-- end footer -->
+<?php include 'particle/footer.php' ?> <!-- end footer -->
 
 
     <!-- end Footer Area
