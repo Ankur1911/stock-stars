@@ -35,6 +35,7 @@
 </head>
 
 <body>
+    
     <?php include 'beginner.php' ?>
     <p><b class="topic">Stock Market Basics</b><br><br>
     A share market is where shares are either issued or traded in.<br>

@@ -85,7 +85,7 @@ Fixed Navigation
 	</div>
 </section>
 
-<section class="about section-sm" id="about">
+<!-- <section class="about section-sm" id="about">
 	<div class="container">
 		<div class="row mb-50 justify-content-center">
 			<div class="col-md-5 col-sm-12 text-center offset-md-1">
@@ -100,7 +100,7 @@ Fixed Navigation
 					</p>	
 				</div>
 			</div>
-		</div> 		<!-- End row -->
+		</div> 		  
 		<div class="row mt-50 justify-content-center">
 			<div class="col-12 col-md-5 offset-md-1 col-md-5 col-sm-12">
 				<div class="content">
@@ -114,9 +114,9 @@ Fixed Navigation
 			<div class="col-12 col-md-5 col-sm-12 text-center">
 				<img src="images/team/about-2.jpg" class="img-fluid rounded shadow" alt="">
 			</div>
-		</div> 		<!-- End row -->
-	</div>   	<!-- End container -->
-</section>   <!-- End section -->
+		</div> 		
+	</div>   
+</section>    -->
 
 <!-- Start Our Team
 		=========================================== -->
