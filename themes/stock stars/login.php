@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 			
         if($rec["about"]==0){
           
-          header('location:beginner/beginner.php');
+          header('location:beginner/stock market basics.php');
         }
         else if(!$rec["status"])
         {
@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   
   <meta name="author" content="Themefisher.com">
 
-  <title>Bit-Bank</title>
+  <title>Stock Stars</title>
 
 <!-- Mobile Specific Meta
   ================================================== -->
@@ -123,7 +123,7 @@ Fixed Navigation
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <div class="block">
-                    <h2 class="text-center">Sign In to BitBank</h2>
+                    <h2 class="text-center">Sign In to Stock Stars</h2>
                     
                     <form class="text-left clearfix mt-50" method="POST" action="login.php" >
                         <div class="form-group">

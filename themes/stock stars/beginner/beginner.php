@@ -43,15 +43,14 @@
     </style>
     
 </head>
-
+<?php include '../particle/api.php' ?>
 <body>
-
+    
     <nav class="navbar navbar-dark bg-dark" id="header">
         <div class="container-fluid" >
-            <a class="navbar-brand" href="#">
-                <img src="../front page/logo.png" alt="Stockstars" width="300" height="70" class="d-inline-block align-text-top" style="margin-left: 20px;">
-
-            </a>
+        <a class="navbar-brand" href="index.php">
+            <img src="../images/logo.png" alt="logo" style="width: 150px; height: 26px;">
+        </a>
             <!-- <button type="button" class="btn btn-primary" id="btn"data-toggle="button" aria-pressed="false" autocomplete="off">Video Tutorials</button> -->
             <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
