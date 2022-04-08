@@ -145,7 +145,7 @@ Fixed Navigation
 						<div class="member-content">
 							<h3>Namra Mehta</h3>
 							<span>Frontend devloper</span>
-							<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p> -->
+							<p>namramehta108@gmail.com</p>
 						</div>
 						<!-- /member name & designation -->
 					   
@@ -187,7 +187,7 @@ Fixed Navigation
 						<div class="member-content">
 							<h3>Prince Mathukiya</h3>
 							<span>User Interface Designer</span>
-							<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p> -->
+							<p>prinsmathukiya9@gmail.com</p>
 						</div>
 						<!-- /member name & designation -->
 						
@@ -207,7 +207,7 @@ Fixed Navigation
 						<div class="member-content">
 							<h3>Vivek Kakadiya</h3>
 							<span>Database Designer</span>
-							<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p> -->
+							<p>vivek.kakadiya111@gmail.com</p>
 						</div>
 						<!-- /member name & designation -->
 						
@@ -246,7 +246,7 @@ Fixed Navigation
                         <div class="member-content">
                             <h3>Ankur Kapuriya</h3>
                             <span>Backend Devloper</span>
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p> -->
+                            <p>ankurkapuriya1911@gmail.com</p>
                         </div>
                         <!-- /member name & designation -->
                     </div>
