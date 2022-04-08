@@ -1,66 +1,4 @@
-<?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    include 'particle/_dbconn.php';
-
-    $name = $_POST["Fname"];
-    $Email = $_POST["Email"];
-    $number = $_POST["number"];
-    $type = $_POST["type"];
-    $password = $_POST["pass"];
-    
-    echo $type;
-    if(isset($_POST["Fname"])&&isset($_POST["Email"])&&isset($_POST["number"])&&isset($_POST["pass"])){
-     
-      if($type=="Beginner"){
-
-        $sql = "select * from `login` where Email='$Email'";
-        $result1 = mysqli_query($conn, $sql); 
-        $num = mysqli_num_rows($result1);
-        if($num==0){
-         
-        $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`,`status`) VALUES ('$name', '$Email', '$number', '$password','0','1')";
-        $result = mysqli_query($conn, $sql);
-        
-        }else{
-          echo "Email is already register";
-        } 
-      }
-
-      if($type=="Expert"){
-
-        $sql = "select * from `login` where Email='$Email'";
-        $result1 = mysqli_query($conn, $sql); 
-        $num = mysqli_num_rows($result1);
-        if($num==0){
-
-          $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`,`status`) VALUES ('$name', '$Email', '$number', '$password','1','0')";
-          $result = mysqli_query($conn, $sql);
-
-
-        }else{
-          echo "Email is already register";
-        }
-
-       
-      }
-      
-
-
-        
-    }else{
-      echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-      PLEASE FILL ALL THE INFORMATION...!!
-     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-     </div>';
-
-    }
-
-       
-
-}
-
-?>
 
 
 
@@ -80,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
   <meta name="author" content="Themefisher.com">
 
-  <title>Bit-Bank</title>
+  <title>Stock Stars</title>
 
 <!-- Mobile Specific Meta
   ================================================== -->
@@ -137,7 +75,80 @@ Fixed Navigation
 ==================================== -->
 <?php include 'particle/api.php' ?>
 <?php include 'particle/header.php' ?>
+<?php
+function validate_mobile($mobile)
+{
+    return preg_match('/^[6-9]\d{9}$/', $mobile);
+}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    include 'particle/_dbconn.php';
 
+    $name = $_POST["Fname"];
+    $Email = $_POST["Email"];
+    $number = $_POST["number"];
+    $type = $_POST["type"];
+    $password = $_POST["pass"];
+    $uppercase = preg_match('@[A-Z]@', $password);
+$lowercase = preg_match('@[a-z]@', $password);
+$number    = preg_match('@[0-9]@', $password);
+$specialChars = preg_match('@[^\w]@', $password);
+
+
+
+
+
+if(isset($_POST["Fname"])&&isset($_POST["Email"])&&isset($_POST["number"])&&isset($_POST["pass"])){
+     
+      if($type=="Beginner"){
+        
+        $sql = "select * from `login` where Email='$Email'";
+        $result1 = mysqli_query($conn, $sql); 
+        $num = mysqli_num_rows($result1);
+        if($num==0){
+         
+        $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`,`status`) VALUES ('$name', '$Email', '$number', '$password','0','1')";
+        $result = mysqli_query($conn, $sql);
+        
+        }else{
+          echo "Email is already register";
+        } 
+      }
+
+      if($type=="Expert"){
+
+        $sql = "select * from `login` where Email='$Email'";
+        $result1 = mysqli_query($conn, $sql); 
+        $num = mysqli_num_rows($result1);
+        if($num==0){
+
+          $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`,`status`) VALUES ('$name', '$Email', '$number', '$password','1','0')";
+          $result = mysqli_query($conn, $sql);
+
+
+        }else{
+          echo "Email is already register";
+        }
+
+       
+      }
+      
+
+
+        
+    }else{
+      echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+      PLEASE FILL ALL THE INFORMATION...!!
+     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+     </div>'
+     ;
+
+    }
+
+       
+
+}
+
+?>
 <section class="signin-page account">
   <div class="container">
     <div class="row">
@@ -152,10 +163,10 @@ Fixed Navigation
               <input type="email" class="form-control"  name="Email"placeholder="Email">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control"  name="number"placeholder="phone number">
+              <input type="tel" id="phone" pattern="[0-9]{10}" class="form-control"  name="number" placeholder="phone number">
             </div>
             <div class="form-group">
-              <input type="password" class="form-control" name="pass" placeholder="Password">
+              <input type="password" class="form-control" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password">
             </div>
             <div class="form-group">
 						<input type="radio" class="radio" name="type" value="Beginner">Beginner

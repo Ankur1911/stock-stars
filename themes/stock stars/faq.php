@@ -10,7 +10,7 @@
   
   <meta name="author" content="Themefisher.com">
 
-  <title>Bit-Bank</title>
+  <title>Stock Stars</title>
 
 <!-- Mobile Specific Meta
   ================================================== -->
