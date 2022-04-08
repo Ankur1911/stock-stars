@@ -36,7 +36,6 @@
 </head>
 
 <body id="body">
-
  <!--
   Start Preloader
   ==================================== -->
@@ -128,7 +127,7 @@ Fixed Navigation
 						<h4>TEAM MEMBER</h4>
 						<h2>Our Team.</h2>
 						<span class="border"></span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!</p>
+						<p>|| Devlopers Team for the Stock Stars ||</p>
 					</div>
 				</div>
 			</div>
@@ -138,15 +137,15 @@ Fixed Navigation
 	               <div class="team-member text-center">
 						<div class="member-photo">
 							<!-- member photo -->
-							<img class="img-fluid" src="images/team/member-1.jpg" alt="team people">
+							<img class="img-fluid" src="images/team/namra.jpg" alt="team people">
 							<!-- /member photo -->
 						</div>
 						
 						<!-- member name & designation -->
 						<div class="member-content">
-							<h3>Shawshank Redemption</h3>
-							<span>Head Of Marketing</span>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+							<h3>Namra Mehta</h3>
+							<span>Frontend devloper</span>
+							<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p> -->
 						</div>
 						<!-- /member name & designation -->
 					   
@@ -159,15 +158,15 @@ Fixed Navigation
 	               <div class="team-member text-center">
 						<div class="member-photo">
 							<!-- member photo -->
-							<img class="img-fluid" src="images/team/member-2.jpg" alt="team people">
+							<img class="img-fluid" src="images/team/frontend.jpg" alt="team people">
 							<!-- /member photo -->
 						</div>
 						
 						<!-- member name & designation -->
 						<div class="member-content">
-							<h3>Luis Anthon</h3>
-							<span>Finance Advisor</span>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+							<h3 id="frontend">Frontend Devlopment Team</h3>
+							<!-- <span>Finance Advisor</span> -->
+							<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p> -->
 						</div>
 						<!-- /member name & designation -->
 					</div>
@@ -179,16 +178,16 @@ Fixed Navigation
 	               <div class="team-member text-center">
 						<div class="member-photo">
 							<!-- member photo -->
-							<img class="img-fluid" src="images/team/member-3.jpg" alt="team people">
+							<img class="img-fluid" src="images/team/prince.jpg" alt="team people">
 							<!-- /member photo -->
 						
 						</div>
 						
 						<!-- member name & designation -->
 						<div class="member-content">
-							<h3>Jonathon Andrew</h3>
-							<span>Head Of Management</span>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+							<h3>Prince Mathukiya</h3>
+							<span>User Interface Designer</span>
+							<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p> -->
 						</div>
 						<!-- /member name & designation -->
 						
@@ -200,15 +199,15 @@ Fixed Navigation
 	               <div class="team-member text-center">
 						<div class="member-photo">
 							<!-- member photo -->
-							<img class="img-fluid" src="images/team/member-4.jpg" alt="team people">
+							<img class="img-fluid" src="images/team/vivek.jpg" alt="team people">
 							<!-- /member photo -->
 					    </div>
 						
 						<!-- member name & designation -->
 						<div class="member-content">
-							<h3>Michael Jonson</h3>
-							<span>Head Of Management</span>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+							<h3>Vivek Kakadiya</h3>
+							<span>Database Designer</span>
+							<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p> -->
 						</div>
 						<!-- /member name & designation -->
 						
@@ -220,15 +219,15 @@ Fixed Navigation
                    <div class="team-member text-center">
                         <div class="member-photo">
                             <!-- member photo -->
-                            <img class="img-fluid" src="images/team/member-5.jpg" alt="team people">
+                            <img style="height: 200px;" class="img-fluid" src="images/team/backend.jpg" alt="team people">
                             <!-- /member photo -->
                         </div>
                         
                         <!-- member name & designation -->
                         <div class="member-content">
-                            <h3>Luis Anthon</h3>
-                            <span>Finance Advisor</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+                            <h3>Backend Development Team</h3>
+                            <!-- <span>Finance Advisor</span> -->
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p> -->
                         </div>
                         <!-- /member name & designation -->
                     </div>
@@ -239,15 +238,15 @@ Fixed Navigation
                    <div class="team-member text-center">
                         <div class="member-photo">
                             <!-- member photo -->
-                            <img class="img-fluid" src="images/team/member-6.jpg" alt="team people">
+                            <img class="img-fluid" src="images/team/ankur.jpg" alt="team people">
                             <!-- /member photo -->
                         </div>
                         
                         <!-- member name & designation -->
                         <div class="member-content">
-                            <h3>Luis Anthon</h3>
-                            <span>Finance Advisor</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+                            <h3>Ankur Kapuriya</h3>
+                            <span>Backend Devloper</span>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p> -->
                         </div>
                         <!-- /member name & designation -->
                     </div>
