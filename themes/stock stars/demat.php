@@ -1,3 +1,59 @@
+INSERT INTO `demat` (`Email`, `password`, `name`, `pan_number`, `aadhar`, `phone`, `street`, `city`, `country`, `Gender`, `nationality`) VALUES ('viv', 'w', 'ww', '2', '22', '2', 'd', 'd', 'd', 'd', 'd');
+
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    include 'particle/_dbconn.php';
+
+    $Email = $_POST["email"];
+    $REmail = $_POST["remail"];
+    $password = $_POST["pass"];
+    $Cpassword = $_POST["cpass"];
+    $name = $_POST["name"];
+    $pan = $_POST["pan"];
+    $aadhar = $_POST["aadhar"];
+    $phone = $_POST["phone"];
+    $street = $_POST["street"];
+    $city = $_POST["city"];
+    $country = $_POST["country"];
+    $Gender = $_POST["gender"];
+    $nationality = $_POST["nationality"];
+  
+
+
+
+
+
+    if($Email==$REmail && $password==$Cpassword){
+      $sql = "INSERT INTO `demat` (`Email`, `password`, `name`, `pan_number`, `aadhar`, `phone`, `street`, `city`, `country`, `Gender`, `nationality`) VALUES ('$Email', '$password', '$name', '$pan', '$aadhar', '$phone', '$street', '$city', '$country', '$Gender', '$nationality');
+      ";
+      $result = mysqli_query($conn, $sql);
+        
+
+    }
+  }
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -135,17 +191,17 @@
       
     <div class="main-block">
         
-    <form action="/">
+    <form action="demat.php" method="POST">
       <h1>Create a free demat account</h1>
       <fieldset>
         <legend>
           <h3>Account Details</h3>
         </legend>
         <div  class="account-details">
-          <div><label>Email*</label><input type="text" name="name" required></div>
-          <div><label>Password*</label><input type="password" name="name" required></div>
-          <div><label>Repeat email*</label><input type="text" name="name" required></div>
-          <div><label>Repeat password*</label><input type="password" name="name" required></div>
+          <div><label>Email*</label><input type="text" name="email" required></div>
+          <div><label>Password*</label><input type="password" name="pass" required></div>
+          <div><label>Repeat email*</label><input type="text" name="remail" required></div>
+          <div><label>Repeat password*</label><input type="password" name="cpass" required></div>
         </div>
       </fieldset>
       <fieldset>
@@ -155,14 +211,14 @@
         <div  class="personal-details">
           <div>
             <div><label>Name*</label><input type="text" name="name" required></div>
-            <div><label>Pan number*</label><input type="text" name="name" required></div>
-            <div><label>Aadhar number*</label><input type="text" name="name" required></div>
-            <div><label>Phone*</label><input type="text" name="name" required></div>
-            <div><label>Street</label><input type="text" name="name"></div>
-            <div><label>City*</label><input type="text" name="name" required></div>
+            <div><label>Pan number*</label><input type="text" name="pan" required></div>
+            <div><label>Aadhar number*</label><input type="text" name="aadhar" required></div>
+            <div><label>Phone*</label><input type="text" name="phone" required></div>
+            <div><label>Street</label><input type="text" name="street"></div>
+            <div><label>City*</label><input type="text" name="city" required></div>
             <div>
               <label>Country*</label>  
-              <select>
+              <select name="country">
                 <option value=""></option>
                 <option value="Armenia">Armenia</option>
                 <option value="Russia">Russia</option>
@@ -176,14 +232,14 @@
           <div>
             <div>
               <label>Gender*</label>
-              <div class="gender">
+              <div class="gender" >
                 <input type="radio" value="none" id="male" name="gender" required/>
                 <label for="male" class="radio">Male</label>
                 <input type="radio" value="none" id="female" name="gender" required/>
                 <label for="female" class="radio">Female</label>
               </div>
             </div>
-            <div class="birthdate">
+            <!-- <div class="birthdate">
               <label>Birthdate*</label>
               <div class="bdate-block">
                 <select class="day" required>
@@ -237,10 +293,10 @@
                 </select>
                 <input type="text" name="name" required>
               </div>
-            </div>
+            </div> -->
             <div>
               <label>Nationality*</label>              
-              <select required>
+              <select required name="nationality">
                 <option value=""></option>
                 <option value="Armenian">Armenian</option>
                 <option value="Russian">Russian</option>
@@ -250,10 +306,10 @@
                 <option value="English">English</option>
               </select>
             </div>
-            <div>
+            <!-- <div>
               <label>Children*</label>
-              <div class="children"><input type="checkbox" name="name" required></div>
-            </div>
+              <div class="children"><input type="checkbox" name="checkbox" required></div>
+            </div>-->
           </div>
         </div>
       </fieldset>

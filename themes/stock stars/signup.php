@@ -76,10 +76,7 @@ Fixed Navigation
 <?php include 'particle/api.php' ?>
 <?php include 'particle/header.php' ?>
 <?php
-function validate_mobile($mobile)
-{
-    return preg_match('/^[6-9]\d{9}$/', $mobile);
-}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include 'particle/_dbconn.php';
 
@@ -88,10 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $number = $_POST["number"];
     $type = $_POST["type"];
     $password = $_POST["pass"];
-    $uppercase = preg_match('@[A-Z]@', $password);
-$lowercase = preg_match('@[a-z]@', $password);
-$number    = preg_match('@[0-9]@', $password);
-$specialChars = preg_match('@[^\w]@', $password);
+
 
 
 
