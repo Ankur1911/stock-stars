@@ -14,11 +14,11 @@
         <!-- End of .col-sm-3 -->
 
         <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3>Our Services</h3>
+          <h3>Experts Services</h3>
           <ul>
-            <li><a href="#">Graphic Design</a></li>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
+            <!-- <li><a href="#">Knowledge of stock market </a></li> -->
+            <li><a href="#">Tips for trading</a></li>
+            <li><a href="#">calls for equity</a></li>
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
@@ -27,9 +27,9 @@
           <h3>Quick Links</h3>
           <ul>
             <!-- <li><a href="#">Partners</a></li> -->
+            <li><a href="./team.php">Our Team</a></li>
             <li><a href="./team.php">About</a></li>
             <li><a href="./faq.php">FAQ’s</a></li>
-            <!-- <li><a href="#">Badges</a></li> -->
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
@@ -52,11 +52,7 @@
                       Linkedin
                   </a>
               </li>
-              <li>
-                  <a href="">
-                      Google PLus
-                  </a>
-              </li>
+              
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
