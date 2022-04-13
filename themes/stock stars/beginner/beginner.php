@@ -106,10 +106,10 @@
         <li class="nav-item">
             <a class="nav-link" href="What is a Mutual Fund.php">What is a Mutual Fund?</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link" href="What precautions must one take before investing in the stock markets.php">What precautions must one take before investing in the stock
 markets?</a>
-        </li>
+        </li> -->
         <!-- <li class="nav-item">
             <a class="nav-link" href="#">Topic name</a>
         </li>
