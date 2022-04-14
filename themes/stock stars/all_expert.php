@@ -66,13 +66,18 @@
     $name=$rec['FName'];
     $dec=$rec['Expertise'];
     $email=$rec['EmailID'];
+    $charge_a=$rec['Charge1'];
+    $charge_b=$rec['Charge3'];
   
-    echo '<div class="card" style="width: 18rem; margin:8px; width:250px;height: 450px; float:left;">
+    echo '<div class="card" style="width: 18rem; margin:8px; width:250px;height: 550px; float:left;">
       <img src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">'.$name.'</h5>
         <h6 class="card-title">'.$email.'</h6>
         <p class="card-text">'.$dec.'</p>
+        <h6 class="card-title">Charges:</h6>
+        <p class="card-text">'.$charge_a.'/month</p>
+        <p class="card-text">'.$charge_b.'/Three-months</p>
             </div>
     </div>';
   }
