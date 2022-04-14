@@ -1,3 +1,29 @@
+
+
+
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    include 'particle/_dbconn.php';
+
+    $sql="select * from expert";
+    $result1 = mysqli_query($conn, $sql); 
+    $num = mysqli_num_rows($result1);
+  
+  
+  
+
+
+  
+  
+  }
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
