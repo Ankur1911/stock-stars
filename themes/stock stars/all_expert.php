@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -53,10 +44,10 @@
     
  </style>
 
-
 <body id="body"> 
 <?php include 'particle/header2.php' ?>
 
+<<<<<<< HEAD
 <?php
 
 
@@ -89,8 +80,17 @@
   
   
 ?>
+=======
+<div class="card" style="width: 18rem; float:left;">
+  <img src="images/client-logo/clients-1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+>>>>>>> 13059b519422155b1612b5bb436e6cfd72f8c05e
 
 </body>
-
 
 </html>
