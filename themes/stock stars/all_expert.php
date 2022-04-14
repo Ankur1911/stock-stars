@@ -70,6 +70,8 @@
   while($rec = mysqli_fetch_assoc($result)){
 
 
+    
+
     $name=$rec['FName'];
     $dec=$rec['Expertise'];
   
