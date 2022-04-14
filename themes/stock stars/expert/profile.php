@@ -22,37 +22,37 @@
                             <div class="row about-list">
                                 <div class="col-md-6">
                                     <div class="media">
-                                        <label>Birthday</label>
+                                        <label>Name</label>
                                         <p>4th april 1998</p>
                                     </div>
                                     <div class="media">
-                                        <label>Age</label>
+                                        <label>Phone</label>
                                         <p>22 Yr</p>
                                     </div>
                                     <div class="media">
-                                        <label>Residence</label>
+                                        <label>Email</label>
                                         <p>Canada</p>
                                     </div>
                                     <div class="media">
-                                        <label>Address</label>
+                                        <label>Experience</label>
                                         <p>California, USA</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="media">
-                                        <label>E-mail</label>
+                                        <label>Charge/1</label>
                                         <p>info@domain.com</p>
                                     </div>
                                     <div class="media">
-                                        <label>Phone</label>
+                                        <label>Charge/3</label>
                                         <p>820-885-3321</p>
                                     </div>
                                     <div class="media">
-                                        <label>Skype</label>
+                                        <label>Charge/6</label>
                                         <p>skype.0404</p>
                                     </div>
                                     <div class="media">
-                                        <label>Freelance</label>
+                                        <label>Charge/12</label>
                                         <p>Available</p>
                                     </div>
                                 </div>
@@ -81,13 +81,13 @@
                         </div>
                         <div class="col-6 col-lg-3">
                             <div class="count-data text-center">
-                                <h6 class="count h2" data-to="850" data-speed="850">850</h6>
-                                <p class="m-0px font-w-600">Photo Capture</p>
+                                <h6 class="count h2" data-to="850" data-speed="850">#+</h6>
+                                <p class="m-0px font-w-600">Days of Trading</p>
                             </div>
                         </div>
                         <div class="col-6 col-lg-3">
                             <div class="count-data text-center">
-                                <h6 class="count h2" data-to="190" data-speed="190">190</h6>
+                                <h6 class="count h2" data-to="190" data-speed="190">*+</h6>
                                 <p class="m-0px font-w-600">Telephonic Talk</p>
                             </div>
                         </div>
