@@ -1,4 +1,12 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+
+  <style>
     body{
     color: #6F8BA4;
     margin-top:20px;
@@ -122,8 +130,10 @@ mark {
 .dark-color {
     color: #20247b;
 }
-</style>
 
+    </style>
+</head>
+<body>
 <section class="section about-section gray-bg" id="about">
             <div class="container">
                 <div class="row align-items-center flex-row-reverse">
@@ -208,3 +218,5 @@ mark {
                 </div>
             </div>
         </section>
+</body>
+</html>
