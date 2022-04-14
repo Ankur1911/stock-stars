@@ -77,6 +77,7 @@
     $dec=$rec['Expertise'];
     $email=$rec['EmailID'];
   
+    
     echo '<div class="col-md-4"> <div class="card" style="width: 18rem;">
       <img src="images/client-logo/clients-1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
