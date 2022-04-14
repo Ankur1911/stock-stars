@@ -24,7 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         }
         else if(!$rec["status"])
         {
-          
+          $sql = "UPDATE `login` SET `status` = '1' WHERE `login`.`Email` = '$Email'";
+   		    $result = mysqli_query($conn, $sql);
           $_SESSION["EName"]=$rec["Name"];
           $_SESSION["EEmail"]=$rec["Email"];
           header('location:ExForm.php');
