@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $sql = "INSERT INTO `expert` (`FName`, `LName`, `MobileNumber`, `EmailID`, `Education`, `City`, `Country`, `State`, `Experience`, `Expertise`, `Charge1`, `Charge3`, `Charge6`, `Charge12`, `AddTime`) VALUES ('$Fname', '$Lname', '$number', '$Email', '$Education', '$city', '$Country', '$State', '$Experience', '$Expertise', '$Charge1', '$Charge3', '$Charge6', '$Charge12', current_timestamp());";
     $result = mysqli_query($conn, $sql);
-
+    header('location:expert/profile.php');
 }
 
 ?>
@@ -40,7 +40,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href='' rel='stylesheet'>
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <style>
-        
         body {
             background: #31BB9E;
         }
@@ -148,8 +147,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             
             </div>
-            <div class="m-5 text-center"><button class="btn btn-primary profile-button" type="submit">Save
+            <div class="m-5 text-center"><button href="/expert/profile.php"class="btn btn-primary profile-button" type="submit">Save
                             Profile</button></div>
+                
         </form>                            
 
         </div>
