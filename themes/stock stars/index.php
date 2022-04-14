@@ -176,8 +176,8 @@ Start About Section
 					<div class="service-icon text-center">
 						<img src="images/icons/bitcoin-exchange.png" alt="">
 					</div>
-					<h3>Instant Exchange</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+					<h3>Convenient Pricing</h3>
+					<p>Stock Strar provides very convenient pricing for subscriptions.</p>
 				</div>
 			</div>
 			<!-- End Single Service Item -->
@@ -188,8 +188,8 @@ Start About Section
 					<div class="service-icon text-center">
 						<img src="images/icons/bitcoin-network.png" alt="">
 					</div>
-					<h3>Strong Network</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+					<h3>Strong Bonding</h3>
+					<p>Stock Star can help to storngly connect Begginers and experts.</p>
 				</div>
 			</div>
            

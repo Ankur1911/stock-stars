@@ -25,8 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if($Email==$REmail && $password==$Cpassword){
-      $sql = "INSERT INTO `demat` (`Email`, `password`, `name`, `pan_number`, `aadhar`, `phone`, `street`, `city`, `country`, `Gender`, `nationality`) VALUES ('$Email', '$password', '$name', '$pan', '$aadhar', '$phone', '$street', '$city', '$country', '$Gender', '$nationality');
-      ";
+      $sql = "INSERT INTO `demat` (`Email`, `password`, `name`, `pan_number`, `aadhar`, `phone`, `street`, `city`, `country`, `Gender`, `nationality`) VALUES ('$Email', '$password', '$name', '$pan', '$aadhar', '$phone', '$street', '$city', '$country', '$Gender', '$nationality');";
       $result = mysqli_query($conn, $sql);
         
 
@@ -233,9 +232,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div>
               <label>Gender*</label>
               <div class="gender" >
-                <input type="radio" value="none" id="male" name="gender" required/>
+                <input type="radio" value="male" id="male" name="gender" required/>
                 <label for="male" class="radio">Male</label>
-                <input type="radio" value="none" id="female" name="gender" required/>
+                <input type="radio" value="female" id="female" name="gender" required/>
                 <label for="female" class="radio">Female</label>
               </div>
             </div>
