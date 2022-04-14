@@ -75,19 +75,20 @@
     $name=$rec['FName'];
     $dec=$rec['Expertise'];
   
-    echo '<div class="card" style="width: 18rem;">
+    echo '<div class="col-md-4"> <div class="card" style="width: 18rem;">
       <img src="images/client-logo/clients-1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">'.$name.'</h5>
         <p class="card-text">'.$dec.'</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
+      </div>
     </div>';
   }
   
   
   
-  
+
   
 ?>
 
