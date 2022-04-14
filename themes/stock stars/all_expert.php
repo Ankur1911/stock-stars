@@ -47,7 +47,7 @@
 <body id="body"> 
 <?php include 'particle/header2.php' ?>
 
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 18rem; float:left;">
   <img src="images/client-logo/clients-1.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>

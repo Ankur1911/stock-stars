@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
           header('location:ExForm.php');
         }
         else 
-        {echo "hii"; }
+        {header('location:expert/profile.php');}
        
     } 
 		else{
