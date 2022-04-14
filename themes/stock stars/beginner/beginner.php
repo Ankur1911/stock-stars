@@ -19,7 +19,7 @@
         }
         .nav-item{
             border:solid #c86969 1px; 
-            background-color:#e8f4ff;
+            background-color:#32c8a7;
             
         }
         .nav-link{

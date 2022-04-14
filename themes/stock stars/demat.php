@@ -20,10 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nationality = $_POST["nationality"];
   
 
-
-
-
-
     if($Email==$REmail && $password==$Cpassword){
       $sql = "INSERT INTO `demat` (`Email`, `password`, `name`, `pan_number`, `aadhar`, `phone`, `street`, `city`, `country`, `Gender`, `nationality`) VALUES ('$Email', '$password', '$name', '$pan', '$aadhar', '$phone', '$street', '$city', '$country', '$Gender', '$nationality');";
       $result = mysqli_query($conn, $sql);
