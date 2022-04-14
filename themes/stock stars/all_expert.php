@@ -60,6 +60,7 @@
 <?php
 
 
+
     include 'particle/_dbconn.php';
 
     $sql="select * from expert";
@@ -74,18 +75,21 @@
 
     $name=$rec['FName'];
     $dec=$rec['Expertise'];
+    $email=$rec['EmailID'];
   
     echo '<div class="col-md-4"> <div class="card" style="width: 18rem;">
       <img src="images/client-logo/clients-1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">'.$name.'</h5>
+        <h6 class="card-title">'.$email.'</h6>
         <p class="card-text">'.$dec.'</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
       </div>
     </div>';
   }
-  
+  // <a href="#" class="btn btn-primary">Go somewhere</a>
+
   
   
 
