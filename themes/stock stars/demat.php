@@ -1,4 +1,4 @@
-INSERT INTO `demat` (`Email`, `password`, `name`, `pan_number`, `aadhar`, `phone`, `street`, `city`, `country`, `Gender`, `nationality`) VALUES ('viv', 'w', 'ww', '2', '22', '2', 'd', 'd', 'd', 'd', 'd');
+<!-- INSERT INTO `demat` (`Email`, `password`, `name`, `pan_number`, `aadhar`, `phone`, `street`, `city`, `country`, `Gender`, `nationality`) VALUES ('viv', 'w', 'ww', '2', '22', '2', 'd', 'd', 'd', 'd', 'd'); -->
 
 <?php
 
