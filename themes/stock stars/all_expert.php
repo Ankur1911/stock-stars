@@ -48,6 +48,7 @@
 <?php include 'particle/header2.php' ?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 
@@ -90,7 +91,40 @@
   </div>
 </div>
 >>>>>>> 13059b519422155b1612b5bb436e6cfd72f8c05e
+=======
+<?php
+>>>>>>> 760ff049add64b0cb7e5b9616107088134f51a49
+
+
+    include 'particle/_dbconn.php';
+
+    $sql="select * from expert";
+    $result = mysqli_query($conn, $sql); 
+    $rec = mysqli_fetch_assoc($result);
+  
+  
+  while($rec = mysqli_fetch_assoc($result)){
+
+
+    
+
+    $name=$rec['FName'];
+    $dec=$rec['Expertise'];
+  
+    echo '<div class="card" style="width: 18rem;">
+      <img src="images/client-logo/clients-1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">'.$name.'</h5>
+        <p class="card-text">'.$dec.'</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>';
+  }
+  
+  
+  
+  
+?>
 
 </body>
-
 </html>
