@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
  
 <html lang="zxx">
@@ -213,109 +225,65 @@ Start Call To Action
 					<!-- testimonial wrapper -->
 					<div class="testimonial-slider">
 						<!-- testimonial single -->
-						<div class="item">
-                            <div class="block">
-    							<!-- client info -->
-    							<div class="client-details">
-    								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dicta eius, nesciunt laboriosam cumque odio veritatis hic quibusdam, impedit corporis libero tenetur blanditiis rem maiores mollitia, vero officiis nulla molestias.</p>
-    							</div>
-    							<!-- /client info -->
-    							<!-- client photo -->
-                                <div class="media client-meta">
-                                  <img class="mr-3 client-thumb" src="images/client-logo/clients-1.jpg" alt="Generic placeholder image">
-                                  <div class="media-body">
-                                    <h4 class="mt-0">Matt Cutts</h4>
-                                    <p>CEO, Themefisher</p>
+
+            <?php
+
+
+
+              include 'particle/_dbconn.php';
+
+              $sql="select * from expert";
+              $result = mysqli_query($conn, $sql); 
+              $rec = mysqli_fetch_assoc($result);
+              $i=0;
+
+              while($i<4){
+
+                $rec = mysqli_fetch_assoc($result);
+
+              $i++;
+              $name=$rec['FName'];
+              $dec=$rec['Expertise'];
+              $email=$rec['Email'];
+              $charge_a=$rec['Charge1'];
+              $charge_b=$rec['Charge3'];
+
+                     echo'         <div class="item">
+                              <div class="block">
+                    <!-- client info -->
+                    <!-- /client info -->
+                    <!-- client photo -->
+                                  <div class="media client-meta">
+                                    <img class="mr-3 client-thumb" src="images/client-logo/clients-1.jpg" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                      <h4 class="mt-0">'.$rec['FName'].'</h4>
+                                      <p>'.$rec['Email'].'</p>
+                                    </div>
                                   </div>
-                                </div>
-    							
-    							<!-- /client photo -->
-                            </div>
-						</div>
+                    
+                    <!-- /client photo -->
+                              </div>
+                </div>';
+
+
+              }
+              // <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+
+
+?>
+					
 						<!-- /testimonial single -->
                         <!-- testimonial single -->
-                        <div class="item">
-                            <div class="block">
-                                <!-- client info -->
-                                <div class="client-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dicta eius, nesciunt laboriosam cumque odio veritatis hic quibusdam, impedit corporis libero tenetur blanditiis rem maiores mollitia, vero officiis nulla molestias.</p>
-                                </div>
-                                <!-- /client info -->
-                                <!-- client photo -->
-                                <div class="media client-meta">
-                                  <img class="mr-3 client-thumb" src="images/client-logo/clients-1.jpg" alt="Generic placeholder image">
-                                  <div class="media-body">
-                                    <h4 class="mt-0">Matt Cutts</h4>
-                                    <p>CEO, Themefisher</p>
-                                  </div>
-                                </div>
-                                
-                                <!-- /client photo -->
-                            </div>
-                        </div>
+                       
+                    
                         <!-- /testimonial single -->
                         <!-- testimonial single -->
-                        <div class="item">
-                            <div class="block">
-                                <!-- client info -->
-                                <div class="client-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dicta eius, nesciunt laboriosam cumque odio veritatis hic quibusdam, impedit corporis libero tenetur blanditiis rem maiores mollitia, vero officiis nulla molestias.</p>
-                                </div>
-                                <!-- /client info -->
-                                <!-- client photo -->
-                                <div class="media client-meta">
-                                  <img class="mr-3 client-thumb" src="images/client-logo/clients-1.jpg" alt="Generic placeholder image">
-                                  <div class="media-body">
-                                    <h4 class="mt-0">Matt Cutts</h4>
-                                    <p>CEO, Themefisher</p>
-                                  </div>
-                                </div>
-                                
-                                <!-- /client photo -->
-                            </div>
-                        </div>
+                       
                         <!-- /testimonial single -->
                         <!-- testimonial single -->
-                        <div class="item">
-                            <div class="block">
-                                <!-- client info -->
-                                <div class="client-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dicta eius, nesciunt laboriosam cumque odio veritatis hic quibusdam, impedit corporis libero tenetur blanditiis rem maiores mollitia, vero officiis nulla molestias.</p>
-                                </div>
-                                <!-- /client info -->
-                                <!-- client photo -->
-                                <div class="media client-meta">
-                                  <img class="mr-3 client-thumb" src="images/client-logo/clients-1.jpg" alt="Generic placeholder image">
-                                  <div class="media-body">
-                                    <h4 class="mt-0">Matt Cutts</h4>
-                                    <p>CEO, Themefisher</p>
-                                  </div>
-                                </div>
-                                
-                                <!-- /client photo -->
-                            </div>
-                        </div>
-                        <!-- /testimonial single -->
-                        <!-- testimonial single -->
-                        <div class="item">
-                            <div class="block">
-                                <!-- client info -->
-                                <div class="client-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dicta eius, nesciunt laboriosam cumque odio veritatis hic quibusdam, impedit corporis libero tenetur blanditiis rem maiores mollitia, vero officiis nulla molestias.</p>
-                                </div>
-                                <!-- /client info -->
-                                <!-- client photo -->
-                                <div class="media client-meta">
-                                  <img class="mr-3 client-thumb" src="images/client-logo/clients-1.jpg" alt="Generic placeholder image">
-                                  <div class="media-body">
-                                    <h4 class="mt-0">Matt Cutts</h4>
-                                    <p>CEO, Themefisher</p>
-                                  </div>
-                                </div>
-                                
-                                <!-- /client photo -->
-                            </div>
-                        </div>
+                        
                         <!-- /testimonial single -->
 					</div>
 				</div> 		<!-- end col lg 12 -->

@@ -1,3 +1,24 @@
+
+
+
+<?php
+
+ include '../particle/_dbconn.php';
+ session_start();
+    
+   
+    $Email = $_SESSION['EEEmail'];
+    
+    
+   
+
+    $sql = "SELECT * FROM `expert` WHERE Email= '$Email';";
+    $result = mysqli_query($conn, $sql);
+		$rec = mysqli_fetch_assoc($result);
+   
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +27,9 @@
     <!--  All snippets are MIT license http://bootdey.com/license -->
     <title>about me - Bootdey.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <section class="section about-section gray-bg" id="about">
@@ -17,43 +38,43 @@
                     <div class="col-lg-6">
                         <div class="about-text go-to">
                             <h3 class="dark-color">About Me</h3>
-                            <h6 class="theme-color lead">A Lead UX &amp; UI designer based in Canada</h6>
-                            <p>I <mark>design and develop</mark> services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface and meaningful interactions.</p>
+                            <!-- <h6 class="theme-color lead">A Lead UX &amp; UI designer based in Canada</h6>
+                            <p>I <mark>design and develop</mark> services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface and meaningful interactions.</p> -->
                             <div class="row about-list">
                                 <div class="col-md-6">
                                     <div class="media">
                                         <label>Name</label>
-                                        <p>4th april 1998</p>
+                                        <p><?php echo $rec['FName']; ?></p>
                                     </div>
                                     <div class="media">
                                         <label>Phone</label>
-                                        <p>22 Yr</p>
+                                        <p><?php echo $rec['MobileNumber']; ?></p>
                                     </div>
                                     <div class="media">
                                         <label>Email</label>
-                                        <p>Canada</p>
+                                        <p><?php echo $rec['Email']; ?></p>
                                     </div>
                                     <div class="media">
                                         <label>Experience</label>
-                                        <p>California, USA</p>
+                                        <p><?php echo $rec['Experience']; ?></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="media">
                                         <label>Charge/1</label>
-                                        <p>info@domain.com</p>
+                                        <p><?php echo $rec['Charge1']; ?></p>
                                     </div>
                                     <div class="media">
                                         <label>Charge/3</label>
-                                        <p>820-885-3321</p>
+                                        <p><?php echo $rec['Charge3']; ?></p>
                                     </div>
                                     <div class="media">
                                         <label>Charge/6</label>
-                                        <p>skype.0404</p>
+                                        <p><?php echo $rec['Charge6']; ?></p>
                                     </div>
                                     <div class="media">
                                         <label>Charge/12</label>
-                                        <p>Available</p>
+                                        <p><?php echo $rec['Charge12']; ?></p>
                                     </div>
                                 </div>
                             </div>

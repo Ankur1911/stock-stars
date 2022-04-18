@@ -31,7 +31,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
           header('location:ExForm.php');
         }
         else 
-        {header('location:expert/profile.php');}
+        {
+          session_start();
+          
+          $_SESSION["EEEmail"]=$rec["Email"];
+          header('location:expert/profile.php');
+        }
        
     } 
 		else{
