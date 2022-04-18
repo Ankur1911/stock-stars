@@ -13,6 +13,7 @@
         margin-left: 300px;
         margin-right: 300px;
         border: solid black 2px;
+        border-radius: 10px;
     }
     h1{
         margin-left: 420px;
@@ -20,7 +21,9 @@
         padding:10px;
         border-radius: 20px;
         background-color: cadetblue;
-
+    }
+    p{
+        margin-left: 10px;
     }
     </style>
 </head>
@@ -29,7 +32,7 @@
     <h1>Expert Validation Form</h1>
 </div>
     <form>
-        <div class="form">
+        <div class="form" id="fem">
         <p>1. qustion 1</p>
         <input type="radio" name="q1o" value="q1option1">ans1
         <input type="radio" name="q1o" value="q1option2">ans1
