@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
    		    $result = mysqli_query($conn, $sql);
           $_SESSION["EName"]=$rec["Name"];
           $_SESSION["EEmail"]=$rec["Email"];
-          header('location:ExForm.php');
+          header('location:expert_validation_form.php');
         }
         else 
         {
