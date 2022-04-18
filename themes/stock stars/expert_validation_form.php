@@ -120,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     <div class="header">
     <h1>Expert Validation Form</h1>
 </div>
-    <form action="expert_valiation_form.php" method="POST">
+    <form action="expert_validation_form.php" method="POST">
         <div class="form" id="fem">
             <div class="qustion">
         <p>1. While evaluating the valuation of two companies using the PEG ratio (which is calculated by dividing PE ratio with percentage EPS growth rate </p>
