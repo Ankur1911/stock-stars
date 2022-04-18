@@ -7,7 +7,7 @@
  session_start();
     
    
-    $Email = $_SESSION['EEEmail'];
+    $Email = $_SESSION['EEmail'];
     
     
    

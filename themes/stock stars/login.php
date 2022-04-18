@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     session_start();
 
 		$sql = "select * from `login` where `Email`='$Email'";
-   		$result = mysqli_query($conn, $sql);
+   	$result = mysqli_query($conn, $sql);
 		$rec = mysqli_fetch_assoc($result);
 		if($password==$rec["Password"])
     {
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         {
           session_start();
           
-          $_SESSION["EEEmail"]=$rec["Email"];
+          $_SESSION["EEmail"]=$rec["Email"];
           header('location:expert/profile.php');
         }
        

@@ -6,6 +6,7 @@ session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include 'particle/_dbconn.php';
+
    
     $Fname = $_POST["Fname"];
     $Lname = $_POST["Lname"];
@@ -22,9 +23,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Charge6 = $_POST["Charge6"];
     $Charge12= $_POST["Charge12"];
     
-    $sql = "INSERT INTO `expert` (`FName`, `LName`, `MobileNumber`, `EmailID`, `Education`, `City`, `Country`, `State`, `Experience`, `Expertise`, `Charge1`, `Charge3`, `Charge6`, `Charge12`, `AddTime`) VALUES ('$Fname', '$Lname', '$number', '$Email', '$Education', '$city', '$Country', '$State', '$Experience', '$Expertise', '$Charge1', '$Charge3', '$Charge6', '$Charge12', current_timestamp());";
+    $sql = "INSERT INTO `expert` VALUES ('$Fname', '$Lname', '$number', '$Email', '$Education', '$city', '$Country', '$State', '$Experience', '$Expertise', '$Charge1', '$Charge3', '$Charge6', '$Charge12', current_timestamp());";
     $result = mysqli_query($conn, $sql);
-    header('location:expert_valiation_form.php');
+    if($result){
+        header('location:expert_valiation_form.php');
+    }
 }
 
 ?>
@@ -100,12 +103,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <h4 class="text-right">Profile Settings</h4>
                     </div>
                     <div class="row mt-2">
-        <form action="ExForm.php" method="post">
+        <form action="ExForm.php" method="POST">
                         <div class="col-md-6"><label class="labels">First Name</label>
-                            <input type="text" id="Fname"class="form-control" name="Fname">
+                            <input type="text" class="form-control" name="Fname">
                         </div>
                         <div class="col-md-6"><label class="labels">Last Name</label>
-                            <input type="text" id="Lname"class="form-control" name="Lname">
+                            <input type="text" class="form-control" name="Lname">
                         </div>
                     </div>
                     <div class="row mt-3">
@@ -147,8 +150,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             
             </div>
-            <div class="m-5 text-center"><button href="/expert/profile.php"class="btn btn-primary profile-button" type="submit">Save
-                            Profile</button></div>
+            <div class="m-5 text-center">
+                <button class="btn btn-primary profile-button" type="submit">Save Profile</button>
+            </div>
                 
         </form>                            
 
