@@ -65,7 +65,7 @@
 
     $name=$rec['FName'];
     $dec=$rec['Expertise'];
-    $email=$rec['EmailID'];
+    $email=$rec['Email'];
     $charge_a=$rec['Charge1'];
     $charge_b=$rec['Charge3'];
   
