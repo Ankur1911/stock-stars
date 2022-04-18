@@ -20,26 +20,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             $cnt++;
         }
     }
-    if($cnt<7){
-        echo  '<script>var txt;
-        if (confirm("You are not eligible for Expert")) {
-          txt = "no";
-        } else {
-          txt = "no";
+    if(isset($_POST["q1o"])&&isset($_POST["q2o"])&&isset($_POST["q3o"])&&isset($_POST["q4o"])&&isset($_POST["q5o"])&&isset($_POST["q6o"])&&isset($_POST["q7o"])&&isset($_POST["q8o"])&&isset($_POST["q9o"])&&isset($_POST["q10o"])){
+
+        if($cnt<7){
+            echo  '<script>var txt;
+            if (confirm("You are not eligible for Expert")) {
+                txt = "no";
+            } else {
+                txt = "no";
+            }
+            if(txt=="no")
+            {
+                window.location.replace("index.php");
+            }
+            </script>';
+            
+            echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Improve Accuracy!</strong> 
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>';
+            
+        }else{
+            header('location:expert/profile.php');
         }
-        if(txt=="no")
-        {
-            window.location.replace("index.php");
-        }
-    </script>';
-       
-        echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Improve Accuracy!</strong> 
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>';
-      
     }else{
-        header('location:expert/profile.php');
+        echo "fill all que";
     }
    
    
