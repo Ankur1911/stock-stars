@@ -29,6 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
           $_SESSION["EName"]=$rec["Name"];
           $_SESSION["EEmail"]=$rec["Email"];
           header('location:EXForm.php');
+
+          
         }
         else 
         {
