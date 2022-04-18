@@ -25,7 +25,7 @@
     p{
         margin-left: 10px;
     }
-    #btn{
+    .btn{
         margin-left: 550px;
         margin-top: 20px;
 
@@ -37,7 +37,7 @@
     <div class="header">
     <h1>Expert Validation Form</h1>
 </div>
-    <form>
+    <form action="expert_valiation_form.php" method="POST">
         <div class="form" id="fem">
         <p>1. Free cash flow (FCF) of a company can be calculated as</p>
         <input type="radio" name="q1o" value="q1option1">The company with a lower PEG ratio is better
@@ -101,7 +101,8 @@
 
         
     </div>
-    <input type="submit" name="submit" id="btn">
+    <button type="submit" class="btn">submit</button>
+
     </form>
 
 </body>
