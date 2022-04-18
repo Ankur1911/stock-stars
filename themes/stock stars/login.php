@@ -28,9 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
    		    $result = mysqli_query($conn, $sql);
           $_SESSION["EName"]=$rec["Name"];
           $_SESSION["EEmail"]=$rec["Email"];
-          header('location:EXForm.php');
+          header('location:ExForm.php');
 
-          
+
         }
         else 
         {
