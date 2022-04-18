@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $sql = "INSERT INTO `expert` (`FName`, `LName`, `MobileNumber`, `EmailID`, `Education`, `City`, `Country`, `State`, `Experience`, `Expertise`, `Charge1`, `Charge3`, `Charge6`, `Charge12`, `AddTime`) VALUES ('$Fname', '$Lname', '$number', '$Email', '$Education', '$city', '$Country', '$State', '$Experience', '$Expertise', '$Charge1', '$Charge3', '$Charge6', '$Charge12', current_timestamp());";
     $result = mysqli_query($conn, $sql);
-    header('location:expert/profile.php');
+    header('location:expert_valiation_form.php');
 }
 
 ?>
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Snippet - BBBootstrap</title>
+    <title>Fill detials</title>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'>
     <link href='' rel='stylesheet'>
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
@@ -102,10 +102,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="row mt-2">
         <form action="ExForm.php" method="post">
                         <div class="col-md-6"><label class="labels">First Name</label>
-                            <input type="text" class="form-control" name="Fname">
+                            <input type="text" id="Fname"class="form-control" name="Fname">
                         </div>
                         <div class="col-md-6"><label class="labels">Last Name</label>
-                            <input type="text" class="form-control" name="Lname">
+                            <input type="text" id="Lname"class="form-control" name="Lname">
                         </div>
                     </div>
                     <div class="row mt-3">
