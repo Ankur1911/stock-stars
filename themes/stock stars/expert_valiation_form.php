@@ -25,6 +25,12 @@
     p{
         margin-left: 10px;
     }
+    #btn{
+        margin-left: 550px;
+        margin-top: 20px;
+
+        margin-bottom: 20px;
+    }
     </style>
 </head>
 <body>
@@ -33,7 +39,7 @@
 </div>
     <form>
         <div class="form" id="fem">
-        <p>1. qustion 1</p>
+        <p>1. What do the bear and the bull stand for?</p>
         <input type="radio" name="q1o" value="q1option1">ans1
         <input type="radio" name="q1o" value="q1option2">ans1
         <input type="radio" name="q1o" value="q1option3">ans1
@@ -92,7 +98,10 @@
         <input type="radio" name="q10o" value="q10option2">ans1
         <input type="radio" name="q10o" value="q10option3">ans1
         <input type="radio" name="q10o" value="q10option4">ans1
+
+        
     </div>
+    <input type="submit" name="submit" id="btn">
     </form>
 
 </body>
