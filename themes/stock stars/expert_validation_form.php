@@ -3,6 +3,9 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
     include 'particle/_dbconn.php';
+    if(isset($_POST["q1o"])&&isset($_POST["q2o"])&&isset($_POST["q3o"])&&isset($_POST["q4o"])&&isset($_POST["q5o"])&&isset($_POST["q6o"])&&isset($_POST["q7o"])&&isset($_POST["q8o"])&&isset($_POST["q9o"])&&isset($_POST["q10o"])){
+
+    
     $ans[1]=$_POST['q1o'];
     $ans[2]=$_POST['q2o'];
     $ans[3]=$_POST['q3o'];
@@ -20,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             $cnt++;
         }
     }
-    if(isset($_POST["q1o"])&&isset($_POST["q2o"])&&isset($_POST["q3o"])&&isset($_POST["q4o"])&&isset($_POST["q5o"])&&isset($_POST["q6o"])&&isset($_POST["q7o"])&&isset($_POST["q8o"])&&isset($_POST["q9o"])&&isset($_POST["q10o"])){
 
         if($cnt<7){
             echo  '<script>var txt;
@@ -44,7 +46,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             header('location:expert/profile.php');
         }
     }else{
-        echo "fill all que";
+        echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong> Fill all Answers..!!</strong> 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>';
     }
    
    
