@@ -259,6 +259,7 @@ Fixed Navigation
 <!-- Start Testimonial
 =========================================== -->
 		
+<<<<<<< HEAD
 	<section class="testimonial section" id="testimonial">
 		<div class="container">
 			<div class="row">				
@@ -296,6 +297,8 @@ Fixed Navigation
 		</div>       <!-- End container -->
 	</section>    <!-- End Section -->
 
+=======
+>>>>>>> 03ad60849d23774f2406cf56ca7e5e0ceb9e8284
   <?php include 'particle/footer.php' ?> <!-- end footer -->
 
 
