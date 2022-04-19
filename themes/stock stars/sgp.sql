@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 11, 2022 at 06:22 PM
+-- Generation Time: Apr 19, 2022 at 06:51 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -42,14 +42,6 @@ CREATE TABLE `demat` (
   `nationality` varchar(8) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `demat`
---
-
-INSERT INTO `demat` (`Email`, `password`, `name`, `pan_number`, `aadhar`, `phone`, `street`, `city`, `country`, `Gender`, `birthdate`, `nationality`) VALUES
-('aa', 'aa', 'aa', 88, 88, 88, '88', 'aa', 'USA', 'none', '0000-00-00', 'Armenian'),
-('viv', 'w', 'ww', 2, 22, 2, 'd', 'd', 'd', 'd', '2022-04-12', 'd');
-
 -- --------------------------------------------------------
 
 --
@@ -60,7 +52,7 @@ CREATE TABLE `expert` (
   `FName` varchar(20) NOT NULL,
   `LName` varchar(20) NOT NULL,
   `MobileNumber` int(10) NOT NULL,
-  `EmailID` varchar(30) NOT NULL,
+  `Email` varchar(30) NOT NULL,
   `Education` varchar(20) NOT NULL,
   `City` varchar(20) NOT NULL,
   `Country` varchar(15) NOT NULL,
@@ -78,11 +70,13 @@ CREATE TABLE `expert` (
 -- Dumping data for table `expert`
 --
 
-INSERT INTO `expert` (`FName`, `LName`, `MobileNumber`, `EmailID`, `Education`, `City`, `Country`, `State`, `Experience`, `Expertise`, `Charge1`, `Charge3`, `Charge6`, `Charge12`, `AddTime`) VALUES
-('', '', 0, '', '', '', '', '', '', '', 0, 0, 0, 0, '2022-03-11 11:46:05'),
-('d', 'd', 323, 'fs@gmail.com', 'ewq', 'we', 'we', 'we', 'we', 'ewf', 32, 32, 32, 32, '2022-03-11 11:11:00'),
-('sd', ' k', 32, 'll@gmail.com', 'oo', 'mo', 'ommo', 'mom', 'mm', 'mom', 0, 88, 88, 8, '2022-03-11 11:47:26'),
-('vvv', 'nn', 909, 'viek@gmail.com', 'jni', 'nii', 'ninn', 'nii', 'nin', 'nn', 0, 99, 99, 99, '2022-03-11 11:46:47');
+INSERT INTO `expert` (`FName`, `LName`, `MobileNumber`, `Email`, `Education`, `City`, `Country`, `State`, `Experience`, `Expertise`, `Charge1`, `Charge3`, `Charge6`, `Charge12`, `AddTime`) VALUES
+('', '', 0, '', '', '', '', '', '', '', 0, 0, 0, 0, '2022-04-19 09:43:56'),
+('Ankur', 'Kapuriya', 2147483647, 'ankur1911@gmail.com', 'hsc', 'junagadh', 'india', 'gujarat', '2', 'i am an expert in quity call', 500, 900, 1600, 4000, '2022-04-19 09:16:35'),
+('Vandan', 'Kalariya', 1353113298, 'kalariyavandan1234@gmail.com', 'MBA', 'Surat', 'India', 'Gujarat', '5 Years', 'Expert in Equity trading.', 2000, 5000, 10000, 18000, '2022-04-19 09:39:34'),
+('Namra', 'Mehta', 2147483647, 'namramehta108@gmail.com', 'MBA', 'Rajkot', 'India', 'Gujarat', '5', 'Mutual Funds', 300, 900, 1200, 1800, '2022-04-19 09:45:54'),
+('Parth', 'Trivedi', 2147483647, 'parth@gmail.com', 'B tech', 'Rajkot', 'India', 'Gujarat', '2', 'Well Knowledge Of Intraday Trading and Option Trading', 3000, 9000, 15000, 25000, '2022-04-18 23:25:49'),
+('Prins', 'mathukiya', 1283811759, 'pd@gmail.com', 'hsc', 'junagadh', 'india', 'gujarat', '1', 'i am an intraday trader.', 100, 300, 600, 1000, '2022-04-19 09:23:49');
 
 -- --------------------------------------------------------
 
@@ -104,19 +98,10 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`, `about`, `status`) VALUES
-('xvsd', '20DCE043@charusat.edu.in', 53453, '3423', 0, 1),
-('caa', 'csa@gmail.com', 0, 'dwm', 0, 1),
-('asdca', 'dqa@gmail.com', 23123, '123', 1, 0),
-('xzcsd', 'ds@gmail.com', 0, 'fmlwefml', 0, 1),
-('ewrfwf', 'dsd@gmail.com', 0, 'dqa', 0, 1),
-('dsfsf', 'dsfs@gmail.com', 0, 'addqaw', 0, 1),
-('cdef', 'ewddw@gmail.com', 0, '232', 0, 1),
-('vivek', 'ivek@gmail.com ', 777777777, '121', 0, 0),
-('vivek', 'kk@gmial.com', 992929, '123', 0, 0),
-('cxvvx', 'vivdk@gmail.com', 5432532, '234', 1, 1),
-('sdvs', 'vivek.kakadiya111@gmail.com', 3423423, 'wq', 0, 0),
-('edwdfasfavcd', 'vivek@gmail.com', 123, '123', 1, 0),
-('fv', 'vsvdsv@gmail.com', 0, 'cdsz', 0, 1);
+('ankur kapuriya', 'ankur1911@gmail.com', 2147483647, 'Ankur@123', 1, 1),
+('Namra', 'namramehta108@gmail.com', 2147483647, 'Namra@123', 1, 1),
+('vivek kakadiya', 'vivek123@gmail.com', 2147483647, 'Vivek@123', 0, 1),
+('vivek', 'vivek@123', 1234567890, 'Vivek@123', 1, 1);
 
 --
 -- Indexes for dumped tables
@@ -132,7 +117,7 @@ ALTER TABLE `demat`
 -- Indexes for table `expert`
 --
 ALTER TABLE `expert`
-  ADD PRIMARY KEY (`EmailID`);
+  ADD PRIMARY KEY (`Email`);
 
 --
 -- Indexes for table `login`
