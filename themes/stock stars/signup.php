@@ -95,7 +95,7 @@ if(isset($_POST["Fname"])&&isset($_POST["Email"])&&isset($_POST["number"])&&isse
          
         $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`,`status`) VALUES ('$name', '$Email', '$number', '$password','0','1')";
         $result = mysqli_query($conn, $sql);
-        
+        header('location:login.php');
         }else{
           echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
           Email is already register...!!
@@ -114,14 +114,25 @@ if(isset($_POST["Fname"])&&isset($_POST["Email"])&&isset($_POST["number"])&&isse
 
           $sql = "INSERT INTO `login` (`Name`, `Email`, `Number`, `Password`,`about`,`status`) VALUES ('$name', '$Email', '$number', '$password','1','0')";
           $result = mysqli_query($conn, $sql);
-
+          echo  '<script>var txt;
+            if (confirm("Account Created sucessfully....!!")) {
+                txt = "no";
+            } else {
+                txt = "no";
+            }
+            if(txt=="no")
+            {
+                window.location.replace("login.php");
+            }
+            </script>';
+          // header('location:login.php');
 
         }else{
           echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
           Email is already register...!!
      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
      </div>'
-     ;;
+     ;
         }
 
        
