@@ -239,7 +239,7 @@ Start Call To Action
 
               while($i<4){
 
-                $rec = mysqli_fetch_assoc($result);
+              $rec = mysqli_fetch_assoc($result);
 
               $i++;
               $name=$rec['FName'];
